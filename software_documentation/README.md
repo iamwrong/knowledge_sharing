@@ -334,6 +334,12 @@ Tests had been used for a long time as a source of examples on how to use a
 give library. I myself quite often look in the unit tests to learn how to
 use a given feature of an obscure library.
 
+### Python Doctest
+
+[Python Doctest] allows to write small unit tests in the Python docstrings. 
+This is another evidence that unit tests do help the reader of the program 
+understand what a given method does.
+
 
 
 ##On the code
@@ -353,7 +359,7 @@ has a hard time evaluate it to give n hint.
 
 
 
-###Meaningful names
+### Meaningful names
 
 The use of meaningful names for your Classes, Objects, Methods, Class Attributes
 and variables will allow the reader to better understand your code.
@@ -361,7 +367,7 @@ and variables will allow the reader to better understand your code.
 * Choosing the right names for your abstractions will help you structure your code/project
 
 
-###Inline comments
+### Inline comments
 
 Inline comments are useful to explain why the _[Black Arts]_ of software
 engineering are being practiced.
@@ -493,3 +499,5 @@ Learn more on [How to Write a Good Commit Message]
 [A log should be written in English]: https://www.scalyr.com/blog/the-10-commandments-of-logging/
 
 [Logging is an Art]: https://www.codeproject.com/Articles/42354/The-Art-of-Logging
+
+[Python Doctest]: https://docs.python.org/2/library/doctest.html
