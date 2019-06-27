@@ -12,5 +12,5 @@ were just written as a reminder to myself (i use them as extension for my
 
 [How to write good documentation]  
 
-[How to write good documentation]   : software_documentation/README.md
+[How to write good documentation]: software_documentation/README.md
 

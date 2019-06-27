@@ -13,7 +13,7 @@ on project management or a specific sub-topic.
 This document was initially written in preparation to a "How to Write (Good)
  Documentation" learning session at HelloFresh. 
 
-##Tip of the day
+## Tip of the day
 
 _I spent 3 hours chasing errors to save 5 minutes reading the README.md_
 
