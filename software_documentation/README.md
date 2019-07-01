@@ -91,6 +91,18 @@ it is very important to document critical information right away.
 Documentation as part of the software development process should also be 
 included in the estimations and planing. 
 
+
+[Properties of good documentation]
+
+* Current => __incorrect documentation is worse than missing documentation__
+* Nearby => Ideally in the same repository as the code
+* Unique => principle of the single source of information. If documentation is 
+duplicate extra effort to maintain it needs to be done
+* Discoverable => Documentation should be in the place where the users (naturally)
+look for it, there is no need to duplicate, you can link the documentation.
+
+
+
  
 ## Where should I store my documentation
 
@@ -539,9 +551,6 @@ Learn more on [How to Write a Good Commit Message]
 
 
 
-
-
-
 [How to Write a Good Commit Message]: https://chris.beams.io/posts/git-commit/
 
 [TDD philosophy: tests are executable documentation]: https://technologyconversations.com/2014/04/08/tests-as-documentation/
@@ -563,3 +572,5 @@ Learn more on [How to Write a Good Commit Message]
 [Python Doctest]: https://docs.python.org/2/library/doctest.html
 
 [Agile Documentation Best Practices]: http://www.agilemodeling.com/essays/agileDocumentationBestPractices.htm
+
+[Properties of good documentation]: https://www.writethedocs.org/guide/writing/docs-principles/
