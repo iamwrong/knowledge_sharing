@@ -22,32 +22,32 @@ _I spent 3 hours chasing errors to save 5 minutes reading the README.md_
 
 ### Documentation is an extension of your memory
 
-In a few days, weeks, months you will not longer remember, document
+In a few days, weeks, months you will not longer remember, document 
 learnings and decisions will pay out in the future
 
 
 ### You will need to maintain the code
 
-You will need to maintain the code in the future, therefore you are making
+You will need to maintain the code in the future; therefore you are making 
 the documentation to help the future you. 
 
 ### You want people to use your code
 
-You, and your manager, want other people to use your code (or open source project). 
-There is nothing more frustrating than trying to get a snippet of code and have
-no idea why it does not work; If people can't get your code to work, they
-will not use it.
+You, and your manager, want other people to use your code (or open source 
+ project). There is nothing more frustrating than trying to get a snippet 
+ of code and have no idea why it does not work; If people can't get your 
+ code to work, they will not use it. 
 
 Good documentation is key for people to understand and use your project.
 
 ### Onboarding and User support
 
 Onboarding is much easier when the tools do work and everything is easy to learn. 
-Good documentation is key for a positive onboarding experience.
+Good documentation is key for a positive onboarding experience. 
 
-You should regard the time spent on documentation as an investment, your readers
-will have a much better user experience,will spend less time asking you
-for support, and you will have more time to work on _important things_.
+You should regard the time spent on documentation as an investment, your 
+ readers will have a much better user experience, will spend less time asking 
+ you for support, and you will have more time to work on _important things_. 
  It is a win-win situation
  
  
@@ -58,15 +58,15 @@ an organization is because others are not aware of it. Awareness of your
 awesome project/code is key to avoid implementation
 of similar feature.  
 
-There are lot's of (valid) reasons to have multiple implementations of the same
-thing, however ignorance should not be one of them.
+There are lot of (valid) reasons to have multiple implementations of the same
+thing; however ignorance should not be one of them.
 
 
 ### You are looking for a new job
 
 Maybe you are looking for a job, know how to write documentation is skill you
 can easily show during a _take home challenge_; therefore you should start 
-practice it today
+practice it today.
 
 ## Agile Methodologies and Documentation
 
@@ -81,7 +81,8 @@ Please defer the creation of documentation to the **latest responsible moment,
 it is very important to document critical information right away.  
  
 
-[Agile Documentation Best Practices] key principles for lightweight documentation:
+According to the [Agile Documentation Best Practices], the  key principles for 
+ lightweight documentation:
 
 *  Keep documentation just simple enough, but not too simple
 *  Write the fewest documents with least overlap
@@ -89,7 +90,7 @@ it is very important to document critical information right away.
 
 
 Documentation as part of the software development process should also be 
-included in the estimations and planing. 
+included in the estimations and planning. 
 
 
 [Properties of good documentation]
@@ -104,14 +105,14 @@ look for it, there is no need to duplicate, you can link the documentation.
 
 
  
-## Where should I store my documentation
+## Use the version control for your documentation
 
 Ideally the documentation directed to other software engineers should be checked in
 into the version control system. This gives the benefit of having all the documentation:
-* all in the same place
-* easy to find
-* the documentation is also versioned 
-* principle of single source of information
+* All in the same place
+* Easy to find
+* The documentation is also versioned 
+* Principle of single source of information
 
 
 ## Different types of Documentation
@@ -119,12 +120,11 @@ into the version control system. This gives the benefit of having all the docume
 There are several kinds of documentation, each one addresses a different problem.
 * README.md & other markdown files
 * API Documentation: javadoc, scaladoc, python docstrings, Swagger
-* data types
-* naming
-* inline comments in the code
-* commit log
-* unit tests and tests
-* command line parameters
+* Naming
+* Inline comments in the code
+* Commit log
+* Unit tests and tests
+* Command line parameters
 
 Apart from the README.md, the remainder of the documentation is mixed with the
 code, and this is key to be always up to date. 
@@ -135,31 +135,34 @@ code, and this is key to be always up to date.
 The README.md is the first contact one does with your code repository,
 it should answer questions such as:
 
-* is here what i am looking for? In other words, what is the purpose of this
+* Is this what I am looking for? In other words, what is the purpose of this
 repository and does this code do
 
-* Pre-Requisites (is there any prerequisites that should be )
+* Pre-Requisites (are there any prerequisites I should comply with to 
+run this code? Do I need to install any software?)
 
 * Building instructions
 
-* how do i get started (how do i get this running). In other words
+* How do I get started (how do i get this running).
 
-* how do i run unit tests in this thing
+* How do I run the unit tests in this thing 
 
-* whom should I contact if I need help
+* Whom should I contact if I need help
 
-* contribution guidelines
+* Contribution guidelines
 
-* other information
+* Other information
 
 
 Do not assume something is obvious, people really :heart: things that work at 
-the first attempt;  In case of doubt include the information
+the first attempt;  In case of doubt include the information. You don't know
+if a developer from other team (eg. backend) is assigned to add a field to 
+ _your_ data pipeline. 
 
 
 #### Item: _Is this what i am looking for?_
 
-You should describe what is the purpose of the project and what does the code
+You should describe what is the purpose of the project, and what does the code
 do. The goal is to help the reader decide if the project is relevant or not.
 
 Good markup titles are: *Motivation*, *Background*, *Overview*, etc.
@@ -169,9 +172,9 @@ Good markup titles are: *Motivation*, *Background*, *Overview*, etc.
 In this section you should list all the prerequisites that should be
 fulfilled in order to use/run the project.
 
-You can list here things such as: programing language version, framework version,
-data stores, ,other software that needs to be installed,
-credentials that are to be obtained, etc.
+You can list here things such as: programming language version, framework 
+ version, data stores, other software that needs to be installed,
+ credentials that are to be obtained, etc.
 
 
 ### Item : Building instructions
@@ -184,16 +187,16 @@ just from memory I can tell you the name of 6 tools that build bytecode (JVM).
 
 #### Item: Getting Started
 
-A step by step guide to get the application to do something. This will allow:
+A step-by-step guide to get the application to do something. This will allow:
 
-* to verify the environment is setup properly
-* the behaviour of the application to be examined
-* the user to modify the toy examples, explore and build more complex things.
+* To verify the environment is setup properly
+* The behaviour of the application to be examined
+* The user to modify the toy examples, explore and build more complex things.
 
 #### Item: How do i run the tests
 
 If one has to modify the code, she should know how to run the tests to
-make sure no unexpected side effect / bug was introduced. 
+make sure no unexpected side-effect / bug was introduced. 
 
 #### Item: whom should I contact if I need help  
 
@@ -222,6 +225,8 @@ has no use for unit tests.
 Be aware that the README.md is a very good tool for onboarding and quick start,
 however because it is not code, it can easily get outdated. Your goal should
 mitigate this, by using the most appropriate way of documenting.   
+
+:warning: beware wrong instructions are worst than no instructions at all
 
 ### Other markup files
 
@@ -456,8 +461,8 @@ The cluster resource manager.
 
 ###Application Logging 
 
-[A log should be written in English] and shall give context about a failure and allow to identify the root cause; 
-hence a good log should answer 5 questions:
+[A log should be written in English] and shall give context about a failure 
+and allow to identify the root cause; hence a good log should answer 5 questions:
 
 - Who (which user, application, cluster node)
 - When (timetamp)
