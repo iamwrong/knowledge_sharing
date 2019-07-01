@@ -68,7 +68,29 @@ Maybe you are looking for a job, know how to write documentation is skill you
 can easily show during a _take home challenge_; therefore you should start 
 practice it today
 
+## Agile Methodologies and Documentation
+
+> Working software over comprehensive documentation
+
+The agile manifesto defends a lightweight version of the documentation, not a
+zero documentation policy. 
+
+Please defer the creation of documentation to the **latest responsible moment,
+ possible**. The key word is **responsible**, if you are doing a task that you
+ forget the steps to replicate it, you need to document it right way; This is,
+it is very important to document critical information right away.  
  
+
+[Agile Documentation Best Practices] key principles for lightweight documentation:
+
+*  Keep documentation just simple enough, but not too simple
+*  Write the fewest documents with least overlap
+*  Put the information in the most appropriate place
+
+
+Documentation as part of the software development process should also be 
+included in the estimations and planing. 
+
  
 ## Where should I store my documentation
 
@@ -77,6 +99,7 @@ into the version control system. This gives the benefit of having all the docume
 * all in the same place
 * easy to find
 * the documentation is also versioned 
+* principle of single source of information
 
 
 ## Different types of Documentation
@@ -444,8 +467,6 @@ understand the code and what exactly a 401 is.
 
 
 
-
-
 ## Commit Log
 
 The commit log is also a valuable source of documentation.
@@ -501,3 +522,5 @@ Learn more on [How to Write a Good Commit Message]
 [Logging is an Art]: https://www.codeproject.com/Articles/42354/The-Art-of-Logging
 
 [Python Doctest]: https://docs.python.org/2/library/doctest.html
+
+[Agile Documentation Best Practices]: http://www.agilemodeling.com/essays/agileDocumentationBestPractices.htm
