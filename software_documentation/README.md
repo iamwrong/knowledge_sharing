@@ -475,9 +475,53 @@ Good commit messages enhance features such as log, diff, blame. It helps
 understand the changes made, make code review easier and help you structure 
 your code better.
 
-Git log should be the source of truth of why changes were made, not Jira.
-The ticket system is a tool for the POs, PMs, when trying to understand the 
-reason of change one should not need to use an additional tool. 
+
+##The Ticket System (Jira) is good to track customer requests and project 
+management
+
+
+Git log should be the source of information of why changes were made, not Jira.
+> User Story: On table X provide attribute Y
+
+does not look like much of a reason why implementation A is favored over B, does it?
+
+When you perform a _diff_ or a _blame_ over the code you want to understand why
+that specific change was done, therefore is critical the information is stored
+in the version control. 
+
+Of course, you should put a reference to the ticket system if relevant and gives
+context, however the commit log should be enough.
+
+### The commit as a work unit
+
+Things might get easier if you see each commit as a work unit.
+Therefore each commit should only have related things.
+
+As guideline can you describe the all the changes happening in a single
+commit commit message?
+* No => break into describable things
+* Yes => Would you be comfortable do a code review on a commit that size?
+  * no => break further
+  * yes => you are good to go (:
+
+
+For example:
+> Add feature X and Fix code formatting in the same commit
+
+Bad: The formatting cleanup will cause unrelated changes with feature X to the
+commit, which will make, for example, the code-review harder.
+
+> Changes based on code review
+
+Bad: this message does not capture the reason why the change were does. You
+probably followed several suggestions on your reviews hence, you could
+have done one for each suggestion.
+
+
+You probably already know, but it is possible to go through each commit on
+code review; hence good commits will help you make structure better
+your pull requests and will also help your reviewer.
+
 
 ### 7 Commandments of good commit messages
 
@@ -491,11 +535,6 @@ reason of change one should not need to use an additional tool.
 
 
 Learn more on [How to Write a Good Commit Message]
-
-
-
-
-
 
 
 
