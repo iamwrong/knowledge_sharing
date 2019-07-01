@@ -302,6 +302,12 @@ the API documentation**; if one want to know how it is implemented, a safari
 trip to the source code can always be taken.
 
 
+:star2: dedicated pages such as javadoc, scaladoc, pythondoc, readthedocs
+are a good example on how the _single source of information_ (the code)
+is converted into a different way of delivering the documentation. Because this
+_fancy pants_ html pages are generated from the source code of the application,
+they will always be in sync with the source code.
+
            
 ### Expose the functionality, hide the details of the implementation
 
@@ -345,6 +351,8 @@ These use of a library as advantage:
 * it is checked in the code repository
 * it is always up to date 
 
+:star2: Another great example of the single source of information. The help
+given by the command line will always be up to date with the source code.
 
 ## Tests
 
