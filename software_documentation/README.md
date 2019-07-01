@@ -251,15 +251,14 @@ Please keep in mind that the **code is written once and read many many many time
 If you are working on a public API or shared library your quality standard should
 be ~~double~~ triple the usual.
 
-Avoid naming that collide with well known concepts: eg. java interfaces, concepts
+Avoid naming that collide with well-known concepts: eg. java interfaces, concepts
 from the real world, software pattern names; For example, if a class has factory
-in the name, it is expected to be an implementation of the factory software pattern,
-however having factory in the name is not a requirement to implement that
-software pattern.
+in the name, it is expected to be an implementation of the factory software pattern;
+however the naming is not a requirement to implement any software patern.
 
 Please do not overuse software patterns, software patterns are supposed to
 make the code easy to understand (and by transitivity maintain); they should
-not to be used to add unnecessary complexity. There a full list of [Anti Patterns].
+not be used to add unnecessary complexity. There is a full list of [Anti Patterns].
 
 
 
@@ -276,12 +275,12 @@ When designing you API you should be aware, that usually APIs are final
 and only can be changed with great effort.
 
 Once the API is published someone will start to use it, and
-changes will cause code to break.  For this reason you should be
+changes will cause code to break; hence you should be
 very careful when:
-* naming API packages
-* naming API classes
-* naming API methods
-* naming API enums  
+* Naming API packages
+* Naming API classes
+* Naming API methods
+* Naming API enums  
 
 Please use meaningful naming in the public APIs. In the ideal case, the
 naming you use is so good that you would not need any extra documentation.  
@@ -291,15 +290,14 @@ naming you use is so good that you would not need any extra documentation.
 You should be aware
 
 - The documentation will be read while browse through the code
-- The documentation will be read on a fancy-pants _online docs_ build over
-your documentation
+- The documentation will be read on a web fancy-pants _online docs_ build from the source code
 - The documentation will be shown on the IDE while users are typing the
 name of the classes and the methods.
 
 If you think of the latter two cases, it becomes obvious the reader will
 look at the documentation when she want to:
-* locate some code which has a given functionality
-* learn how to use a given function, method or  class
+* Locate some code which has a given functionality
+* Learn how to use a given function, method or  class
 
 Therefore the API documentation should focus on what it does and not how it
 does it. In other words the **details of the implementation should not be in 
@@ -309,7 +307,7 @@ trip to the source code can always be taken.
 
 :star2: dedicated pages such as javadoc, scaladoc, pythondoc, readthedocs
 are a good example on how the _single source of information_ (the code)
-is converted into a different way of delivering the documentation. Because this
+is converted into a different way of delivering the documentation. This
 _fancy pants_ html pages are generated from the source code of the application,
 they will always be in sync with the source code.
 
@@ -318,8 +316,8 @@ they will always be in sync with the source code.
 
 After the last point it should clear the **API documentation should expose
 the functionality and hide the details of the implementation**. A good example
-of this is the [Spark Coalesce Documentation], there is even advice on potential
-hazardous situations without ever go into the implementation details.
+of this is the [Spark Coalesce Documentation], it gives advice on potential
+hazardous situations without ever going into the implementation details.
 
 
 If there is an easy way to describe the functionality of a package, class, function
@@ -328,17 +326,17 @@ you should prefer that way.
 However, this is not always possible, in those cases you can:
 * Use 1 line to give a brief description
 * Line break and use more lines if needed
-* describe each one of the parameters (include data type  on untyped languages)
-* don't forget the return type.
+* Describe each one of the parameters (include data type  on untyped languages)
+* Don't forget the return type.
 
 
 Checklist:
-* get to the point as soon as possible
-* if you can do it 1 sentence do it
-* summarize the method return value  (you can see it as a more succinct version
+* Get to the point as soon as possible
+* If you can do it 1 sentence do it
+* Summarize the method return value  (you can see it as a more succinct version
 of the doc) ;this does apply if you can summarize your method in 1 sentence
-* do not make references to the details of the implementation
-* if you are referring to an instance of the class use the keyword this
+* Do not make references to the details of the implementation
+* If you are referring to an instance of the class use the keyword this
 (Scala, Java) or self (Python)
 
 
@@ -348,13 +346,13 @@ of the doc) ;this does apply if you can summarize your method in 1 sentence
 If your application reads argument from the command line (console), 
 please use a specialized library (eg. Apache CommonsCli, Python Argparser, etc);
 
-These use of a library as advantage:
-* help you parse the input
-* provide description for each argument
-* provide help for each argument
-* it is usable from the command line
-* it is checked in the code repository
-* it is always up to date 
+It brings several advantage:
+* Help you parse the input
+* Provide description for each argument
+* Provide help for each argument
+* It is usable from the command line
+* It is checked in the code repository
+* It documentation is always up-to-date 
 
 :star2: Another great example of the single source of information. The help
 given by the command line will always be up to date with the source code.
@@ -364,22 +362,21 @@ given by the command line will always be up to date with the source code.
 It might not look obvious, but the unit tests are also another way of documenting
 your code by providing workable examples.
 
-According to the [TDD philosophy: tests are executable documentation]
-tests are executable documentation.
+Additionally, according to the [TDD philosophy: tests are executable documentation].
 
-Therefore is very important to *write readable tests*, not only to validate a given feature,
+Therefore, it is very important to *write readable tests*, not only to validate a given feature,
 but also to be read and understand by a fellow developer.   
 
-### Tests are always up to date
+### Tests are always up-to-date
 
-Unlikely the remainder of the documentation, tests are always up to date;
+Unlikely the remainder of the documentation, tests are always up-to-date;
  the CI will fail the build if they are not.
 
 
 ### Tests as source of examples
 
 Tests had been used for a long time as a source of examples on how to use a
-give library. I myself quite often look in the unit tests to learn how to
+give library. I myself, quite often look in the unit tests to learn how to
 use a given feature of an obscure library.
 
 ### Python Doctest
@@ -401,8 +398,8 @@ Therefore in your Python Docstring include the data type.
 
 On scala the method return data types and the variable data types are optional. As a 
 rule of thumb, **if it takes you more than 3 seconds to evaluate the data type of an 
-expression, please make it explicit**; someone new to the codebase will have a much 
-harder time make sense of it, and very often the code is so obscure that the IDE also
+expression, please make it explicit**. Someone new to the codebase will have a much 
+harder time make sense of it;administrative and very often the code is so obscure that the IDE also
 has a hard time evaluate it to give n hint. 
 
 
@@ -449,23 +446,23 @@ lose their (some of) usefulness; Big logs cause a needle in a haystack problem.
 ### Administrative Logging
 
 [Administrative Logs] are very useful to understand the application, in the case of
-Data application it’s useful to log the following _adminsitrative_ information:
+Data application it’s useful to log the following _administrative_ information:
 * Yarn application id  
 * Paths being loaded
 * Output directory
 
 This information allows you, without checking the code, see if your data processing job
 generated any output, if the input directories are empty or locate your job in
-The cluster resource manager. 
+the cluster resource manager. 
 
 
 ###Application Logging 
 
-[A log should be written in English] and shall give context about a failure 
+[A log should be written in English] and should give context about a failure 
 and allow to identify the root cause; hence a good log should answer 5 questions:
 
 - Who (which user, application, cluster node)
-- When (timetamp)
+- When (timestamp)
 - Where (context, class)
 - What (command, what was being done)
 - Result (Exception)
@@ -474,7 +471,7 @@ and allow to identify the root cause; hence a good log should answer 5 questions
 
 ### Logs to give context to the code
 
-The logging will also give context your code, and help to understand
+The logging will also give context your code, and help you understand
 what is happening. For example :
 
 ```
@@ -487,8 +484,7 @@ if (status_code == 401){
 
 ```
 
-This log will not give valuable information in the log files, but will also
-understand the code and what exactly a 401 is.
+This log will not only give valuable information in the log files, but will also point to the problem at hand.
 
 
 
@@ -510,19 +506,19 @@ Git log should be the source of information of why changes were made, not Jira.
 
 does not look like much of a reason why implementation A is favored over B, does it?
 
-When you perform a _diff_ or a _blame_ over the code you want to understand why
-that specific change was done, therefore is critical the information is stored
+When you perform a _diff_ or a _blame_ over the code, you want to understand why
+that specific change was done; therefore is critical the information is stored
 in the version control. 
 
-Of course, you should put a reference to the ticket system if relevant and gives
+Of course, you should put a reference to the ticket system if it is relevant and gives
 context, however the commit log should be enough.
 
 ### The commit as a work unit
 
-Things might get easier if you see each commit as a work unit.
-Therefore each commit should only have related things.
+Things might get easier if you see each commit as a work unit;
+therefore each commit should only have related things.
 
-As guideline can you describe the all the changes happening in a single
+As guideline can you describe all the changes happening in a single
 commit commit message?
 * No => break into describable things
 * Yes => Would you be comfortable do a code review on a commit that size?
@@ -538,9 +534,9 @@ commit, which will make, for example, the code-review harder.
 
 > Changes based on code review
 
-Bad: this message does not capture the reason why the change were does. You
-probably followed several suggestions on your reviews hence, you could
-have done one for each suggestion.
+Bad: this message does not capture the reason why the change were done. You
+probably followed several suggestions on your reviews; hence you probably could
+have isolated each change in a separate commit.
 
 
 You probably already know, but it is possible to go through each commit on
