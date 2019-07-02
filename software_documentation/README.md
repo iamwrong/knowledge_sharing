@@ -13,9 +13,6 @@ on project management or a specific sub-topic.
 This document was initially written in preparation to a "How to Write (Good)
  Documentation" learning session at HelloFresh. 
 
-## Tip Of The Day
-
-_I spent 3 hours chasing errors to save 5 minutes reading the README.md_
 
 ## Why Should You Care
 
