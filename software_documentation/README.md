@@ -4,7 +4,7 @@
 ## Motivation
 
 I noticed the Data Engineering tribe at HelloFresh SE was struggling 
-with the documented the software produced.  
+ documenting the produced software. 
 
 Most of the documentation available on the internet seems to focus either 
 on project management or a specific sub-topic. 
@@ -333,12 +333,12 @@ Checklist:
 * Summarize the method return value  (you can see it as a more succinct version
 of the doc) ;this does apply if you can summarize your method in 1 sentence
 * Do not make references to the details of the implementation
-* If you are referring to an instance of the class use the keyword this
-(Scala, Java) or self (Python)
+* If you are referring to an instance of the class use the keyword _this_
+(Scala, Java) or _self_ (Python)
 
 
       
-##Command Line Documentation
+## Command Line Documentation
 
 If your application reads argument from the command line (console), 
 please use a specialized library (eg. Apache CommonsCli, Python Argparser, etc);
@@ -384,7 +384,7 @@ understand what a given method does.
 
 
 
-##On The Code
+## On The Code
 
 ### Data Types
 
@@ -453,7 +453,7 @@ generated any output, if the input directories are empty or locate your job in
 the cluster resource manager. 
 
 
-###Application Logging 
+### Application Logging 
 
 [A log should be written in English] and should give context about a failure 
 and allow to identify the root cause; hence a good log should answer 5 questions:
@@ -494,7 +494,7 @@ understand the changes made, make code review easier and help you structure
 your code better.
 
 
-##The Ticket System (Jira) Is Good To Track Customer Requests And Project 
+## The Ticket System (Jira) Is Good To Track Customer Requests And Project 
 Management
 
 
