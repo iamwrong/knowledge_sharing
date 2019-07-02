@@ -1,4 +1,4 @@
-# How to write good documentation for project
+# How To Write Good Documentation For Project
 
 
 ## Motivation
@@ -13,25 +13,25 @@ on project management or a specific sub-topic.
 This document was initially written in preparation to a "How to Write (Good)
  Documentation" learning session at HelloFresh. 
 
-## Tip of the day
+## Tip Of The Day
 
 _I spent 3 hours chasing errors to save 5 minutes reading the README.md_
 
 ## Why Should You Care
 
 
-### Documentation is an extension of your memory
+### Documentation Is An Extension Of Your Memory
 
 In a few days, weeks, months you will not longer remember, document 
 learnings and decisions will pay out in the future
 
 
-### You will need to maintain the code
+### You Will Need To Maintain The Code
 
 You will need to maintain the code in the future; therefore you are making 
 the documentation to help the future you. 
 
-### You want people to use your code
+### You Want People To Use Your Code
 
 You, and your manager, want other people to use your code (or open source 
  project). There is nothing more frustrating than trying to get a snippet 
@@ -40,7 +40,7 @@ You, and your manager, want other people to use your code (or open source
 
 Good documentation is key for people to understand and use your project.
 
-### Onboarding and User support
+### Onboarding And User Support
 
 Onboarding is much easier when the tools do work and everything is easy to learn. 
 Good documentation is key for a positive onboarding experience. 
@@ -51,7 +51,7 @@ You should regard the time spent on documentation as an investment, your
  It is a win-win situation
  
  
-### Less duplication
+### Less Duplication
 
 One of the reasons why code that duplicates functionality existing within 
 an organization is because others are not aware of it. Awareness of your 
@@ -62,13 +62,13 @@ There are lot of (valid) reasons to have multiple implementations of the same
 thing; however ignorance should not be one of them.
 
 
-### You are looking for a new job
+### You Are Looking For A New Job
 
 Maybe you are looking for a job, know how to write documentation is skill you
 can easily show during a _take home challenge_; therefore you should start 
 practice it today.
 
-## Agile Methodologies and Documentation
+## Agile Methodologies And Documentation
 
 > Working software over comprehensive documentation
 
@@ -105,7 +105,7 @@ look for it, there is no need to duplicate, you can link the documentation.
 
 
  
-## Use the version control for your documentation
+## Use The Version Control For Your Documentation
 
 Ideally the documentation directed to other software engineers should be checked in
 into the version control system. This gives the benefit of having all the documentation:
@@ -115,7 +115,7 @@ into the version control system. This gives the benefit of having all the docume
 * Principle of single source of information
 
 
-## Different types of Documentation
+## Different Types Of Documentation
 
 There are several kinds of documentation, each one addresses a different problem.
 * README.md & other markdown files
@@ -129,7 +129,7 @@ There are several kinds of documentation, each one addresses a different problem
 Apart from the README.md, the remainder of the documentation is mixed with the
 code, and this is key to be always up to date. 
 
-### README.md file
+### README.md File
 
 
 The README.md is the first contact one does with your code repository,
@@ -160,7 +160,7 @@ if a developer from other team (eg. backend) is assigned to add a field to
  _your_ data pipeline. 
 
 
-#### Item: _Is this what i am looking for?_
+#### Item: _Is This What I Am Looking For?_
 
 You should describe what is the purpose of the project, and what does the code
 do. The goal is to help the reader decide if the project is relevant or not.
@@ -177,7 +177,7 @@ You can list here things such as: programming language version, framework
  credentials that are to be obtained, etc.
 
 
-### Item : Building instructions
+### Item : Building Instructions
 
 
 Instructions on how to build the artifact should be provided. Yes it is needed,
@@ -193,12 +193,12 @@ A step-by-step guide to get the application to do something. This will allow:
 * The behaviour of the application to be examined
 * The user to modify the toy examples, explore and build more complex things.
 
-#### Item: How do i run the tests
+#### Item: How Do I Run The Tests
 
 If one has to modify the code, she should know how to run the tests to
 make sure no unexpected side-effect / bug was introduced. 
 
-#### Item: whom should I contact if I need help  
+#### Item: Whom Should I Contact If I Need Help  
 
 In a corporate environment, hundreds or thousands of people work in tech.
 Ideally the team / people maintaining the project should be identifiable.
@@ -213,14 +213,14 @@ A separate markup file can be created for contribution guidelines.  **HelloFresh
 do have a template for contribution guidelines (under software governance)
 
 
-#### Item: Other things you find useful
+#### Item: Other Things You Find Useful
 
 There is no such thing as a _one solution fits all_, therefore feel free to
 add other information you think useful and do remove items you think don't
 fit a specific kind of project. For example, this knowledge sharing project
 has no use for unit tests. 
 
-#### Final notes on markup files (and Readme.md)
+#### Final Notes On Markup Files (And Readme.md)
 
 Be aware that the README.md is a very good tool for onboarding and quick start,
 however because it is not code, it can easily get outdated. Your goal should
@@ -228,7 +228,7 @@ mitigate this, by using the most appropriate way of documenting.
 
 :warning: beware wrong instructions are worst than no instructions at all
 
-### Other markup files
+### Other Markup Files
 
 Example of other useful markup files are:
 
@@ -237,7 +237,7 @@ Example of other useful markup files are:
 * how to obtain credentials to use a given service
 
 
-## The Code as Documentation
+## The Code As Documentation
 
 The best documentation is not to need documentation, therefore when designing
 your abstractions (eg. packages, classes, methods, variables) keep in mind
@@ -269,7 +269,7 @@ When creating API documentation your focus should be on informing the reader
 Code implements the functionality should be omitted. 
 
 
-### APIs are final
+### APIs Are Final
 
 When designing you API you should be aware, that usually APIs are final
 and only can be changed with great effort.
@@ -285,7 +285,7 @@ very careful when:
 Please use meaningful naming in the public APIs. In the ideal case, the
 naming you use is so good that you would not need any extra documentation.  
 
-### API Documentation will be read/consumed though several channels
+### API Documentation Will Be Read/Consumed Though Several Channels
 
 You should be aware
 
@@ -312,7 +312,7 @@ _fancy pants_ html pages are generated from the source code of the application,
 they will always be in sync with the source code.
 
            
-### Expose the functionality, hide the details of the implementation
+### Expose The Functionality, Hide The Details Of The Implementation
 
 After the last point it should clear the **API documentation should expose
 the functionality and hide the details of the implementation**. A good example
@@ -367,13 +367,13 @@ Additionally, according to the [TDD philosophy: tests are executable documentati
 Therefore, it is very important to *write readable tests*, not only to validate a given feature,
 but also to be read and understand by a fellow developer.   
 
-### Tests are always up-to-date
+### Tests Are Always Up-To-Date
 
 Unlikely the remainder of the documentation, tests are always up-to-date;
  the CI will fail the build if they are not.
 
 
-### Tests as source of examples
+### Tests As Source Of Examples
 
 Tests had been used for a long time as a source of examples on how to use a
 give library. I myself, quite often look in the unit tests to learn how to
@@ -387,7 +387,7 @@ understand what a given method does.
 
 
 
-##On the code
+##On The Code
 
 ### Data Types
 
@@ -404,7 +404,7 @@ has a hard time evaluate it to give n hint.
 
 
 
-### Meaningful names
+### Meaningful Names
 
 The use of meaningful names for your Classes, Objects, Methods, Class Attributes
 and variables will allow the reader to better understand your code.
@@ -412,7 +412,7 @@ and variables will allow the reader to better understand your code.
 * Choosing the right names for your abstractions will help you structure your code/project
 
 
-### Inline comments
+### Inline Comments
 
 Inline comments are useful to explain why the _[Black Arts]_ of software
 engineering are being practiced.
@@ -433,7 +433,7 @@ the best way to document something**.
 Logging plays an important part on the maintenance of an application,
 hence should also be considered documentation.
 
-### Not everything is worth to log
+### Not Everything Is Worth To Log
 
 For example, you are making an HTTP request (with 3 retries), there is not
 much value in log every failure; a failure on a HTTP request is a normal thing;
@@ -469,7 +469,7 @@ and allow to identify the root cause; hence a good log should answer 5 questions
 
 
 
-### Logs to give context to the code
+### Logs To Give Context To The Code
 
 The logging will also give context your code, and help you understand
 what is happening. For example :
@@ -497,8 +497,8 @@ understand the changes made, make code review easier and help you structure
 your code better.
 
 
-##The Ticket System (Jira) is good to track customer requests and project 
-management
+##The Ticket System (Jira) Is Good To Track Customer Requests And Project 
+Management
 
 
 Git log should be the source of information of why changes were made, not Jira.
@@ -513,7 +513,7 @@ in the version control.
 Of course, you should put a reference to the ticket system if it is relevant and gives
 context, however the commit log should be enough.
 
-### The commit as a work unit
+### The Commit As A Work Unit
 
 Things might get easier if you see each commit as a work unit;
 therefore each commit should only have related things.
@@ -544,7 +544,7 @@ code review; hence good commits will help you make structure better
 your pull requests and will also help your reviewer.
 
 
-### 7 Commandments of good commit messages
+### 7 Commandments Of Good Commit Messages
 
 * Separate subject from body with a blank line
 * Limit the subject line to 50 characters
