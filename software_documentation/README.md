@@ -225,6 +225,11 @@ mitigate this, by using the most appropriate way of documenting.
 
 :warning: beware wrong instructions are worst than no instructions at all
 
+#### Readme.md Examples: 
+Good Readme.md files are for example: [aws encryption sdk], [aws sdk java], 
+ [Apache Spark] or [Closure Compiler (Google)]; There is plenty of good 
+  examples on github.
+
 ### Other Markup Files
 
 Example of other useful markup files are:
@@ -580,3 +585,15 @@ Learn more on [How to Write a Good Commit Message]
 [Agile Documentation Best Practices]: http://www.agilemodeling.com/essays/agileDocumentationBestPractices.htm
 
 [Properties of good documentation]: https://www.writethedocs.org/guide/writing/docs-principles/
+
+
+
+
+[aws encryption sdk]: https://github.com/aws/aws-encryption-sdk-python
+[aws sdk java]: https://github.com/aws/aws-sdk-java
+[Apache Spark]: https://github.com/apache/spark
+[Closure Compiler (Google)]: https://github.com/google/closure-compiler
+
+[Linux Kernel]: https://github.com/torvalds/linux/commits/master 
+
+
