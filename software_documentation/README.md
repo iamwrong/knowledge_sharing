@@ -1,4 +1,4 @@
-# How To Write Good Documentation For Project
+# How To Write Good Documentation For Your Project
 
 
 ## Motivation
