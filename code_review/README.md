@@ -78,17 +78,35 @@ I will summarize some of them:
 Code review can be done in a more light-weight or formal setup. It can be 
  done throw:
  
-* pair programing
+* [Pair Programming] (not considered code-review but worth mention)
 * over the shoulder
 * patch files sent over email
 * with the help of tools
 * on a review meeting (with :cake: and :cookie: is always better )
+
+### Pair Programing
+
+Pair programming shares some of the benefits of code-review, however it should
+ not be seen as a replacement of code-review. 
+ 
+[Pair Programing Additional Benefits] :
+ * At least two programmers need to agree with the code at the same time
+ * Any ping-pong is solved right away
+ * Flaws are spotted even earlier (not at the end of a long code-review)
+ 
+### Over The Shoulder Code Review
+
+
+ 
+   
  
 
 
 [Microsoft Blog Entry]: http://blogs.microsoft.co.il/gilf/2008/08/29/the-benefits-of-code-review/
 [Simple Programmer Essay]:https://simpleprogrammer.com/why-code-reviews-make-better-code-teams/
 [Atlassian Article] : https://www.atlassian.com/agile/software-development/code-reviews
+[Pair Programming]: http://www.extremeprogramming.org/rules/pair.html
+[Pair Programing Additional Benefits]: https://blog.codinghorror.com/pair-programming-vs-code-reviews/
 
 
 
