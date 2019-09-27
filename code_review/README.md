@@ -183,9 +183,77 @@ https://web.archive.org/web/20160305004143/http://blog.fogcreek.com/increase-def
 https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/
 
 
+https://medium.com/@andreigridnev/examples-of-code-review-checklists-and-guides-2dfed082a86d
+
+https://stackoverflow.com/questions/90002/what-is-a-reasonable-code-coverage-for-unit-tests-and-why
+
+
+
+
+
 ### Convert Problems into issues
 
 
+## How to make a good pull Request
+
+* always self review
+* build and run the code
+* use automation when possible
+* principle of the minimal number of lines of code
+* write good commit messages
+* Do not perform distinct operations over existing code
+
+
+
+### Ideal size of a pull request
+
+To be easy and fast to review a pull request should respect the principle of 
+the **minimal number of lines of code**. Therefore:
+ * narrow in scope and size, well-defined, self-contained scope that they cover.
+ * shorter changes are preferred over longer changes
+ * ideally it should not take more than 20 minutes to review
+ * big changes make the review to be done with less attention (one of the purposes of 
+ code-review is to have improve the software development quality)
+  
+source: [Palantir Blog]
+  
+### Refactoring and behavioral changing rules
+
+Perform multiple kinds of distinct operations on existing code will make
+ the pull request much harder to review, therefore do no perform multiple
+ kinds of operations within the same pull request, this is:
+ * change behaviour
+ * refactoring (restructuring code, improve readability, reduce complexity)
+ * code formatting
+ * file renaming
+ 
+In addition big ass huge changes will make the version control to not bne able to
+ do it's magic (identify files were renamed and things like that).
+ 
+### Write good commit messages
+
+A good commit message will help you [kill two birds with one stone]. A good
+commit message will help you:
+* write the pull request template
+* can be consulted by the reviewer during the code review process
+* will document your changes in the version control system.
+
+Ideally you should commit your changes as a work unit (narrow in scope, size, 
+ with self contained scope), because these changes are easier to describe 
+ the nature of the changes.
+ 
+#### 7 Commandments Of Good Commit Messages
+
+Separate subject from body with a blank line
+* Limit the subject line to 50 characters
+* Capitalize the subject line
+* Do not end the subject line with a period
+* Use the imperative mood in the subject line
+* Wrap the body at 72 characters
+* Use the body to explain what and why vs. how 
+
+ 
+source: [How to Write a Git Commit Message]
 
 
 
@@ -205,7 +273,9 @@ https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-c
 [Pair Programming]: http://www.extremeprogramming.org/rules/pair.html
 [Pair Programing Additional Benefits]: https://blog.codinghorror.com/pair-programming-vs-code-reviews/
 [Practical Code Review]: http://www.methodsandtools.com/archive/archive.php?id=66
-
+[Palantir Blog]: https://medium.com/palantir/code-review-best-practices-19e02780015f
+[How to Write a Git Commit Message]: https://chris.beams.io/posts/git-commit/
+[kill two birds with one stone]: https://dictionary.cambridge.org/dictionary/english/kill-two-birds-with-one-stone
 
 
 
